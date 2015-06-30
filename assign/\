@@ -1,0 +1,58 @@
+/*
+NAME:          Christopher Wampnar
+ASSIGNMENT #2: Page 237, #10
+DISCRIPTION:   The program calculates the total cost for the checks
+	       written during a month.  It incluldes a variable check fee rate based 
+	       on volume of checks written during month.
+NOTE:          Originally compiled using g++
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	double monthly_fee = 10.0;  //stores fixed montly cost
+	double num_checks,          //stores number of checks written in a month
+	       check_fee,           //stores variable cost per check
+	       total_check_fee,     //stores the cost for checks (check_fee * num_checks)
+	       total_cost;          //stores all costs (monthly_fee + total_check_fee)
+	
+	cout<<"Enter number of checks written in month"<<endl;
+	cin >> num_checks;
+
+	//Input validation: requires num_checks to be at least 0.
+	while (num_checks < 0)
+	{
+		cout << "Number of checks must be greater than 0"<< endl;
+		cout << "Please enter number of checks written in month"<< endl;
+		cin>>num_checks;
+	}
+	
+	//variable rates for checks depending on volume written
+	if (num_checks < 20)
+		check_fee = 0.10;
+	else if (num_checks < 40)
+		check_fee = 0.08;
+	else if (num_checks < 60)
+		check_fee = 0.06;
+	else
+		check_fee = 0.04;
+
+	total_check_fee = num_checks * check_fee;//configures costs for checks
+	total_cost = monthly_fee + total_check_fee;//configures total cost to company
+
+	cout << endl <<"******************************"<<endl;
+	cout << "Number of checks written: " << num_checks << endl;
+	cout << "The check fee for " << num_checks << " is $" << check_fee << " per check." << endl;
+	cout << "That equals $"<< total_check_fee<< endl;
+	cout << "******************************"<< endl;
+	cout<< endl;
+
+	cout << "********************************"<< endl;
+	cout << "The total cost for the company is $" << total_cost<< endl;
+	cout << "********************************"<< endl;
+	cout << endl;
+	return 0;
+}
