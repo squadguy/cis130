@@ -1,0 +1,11 @@
+﻿Build started 6/29/2015 1:47:35 PM.
+     1>Project "W:\mtolappa\cis130_001_MW\week4_6-29_7_1\Monday\In-class_Example1\In-class_Example1.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Student_object_and_class_tester.cpp
+         Student_object_and_class_tester.cpp
+     1>w:\mtolappa\cis130_001_mw\week4_6-29_7_1\monday\in-class_example1\student_object_and_class_tester.cpp(60): warning C4101: 'num_cls' : unreferenced local variable
+     1>Done Building Project "W:\mtolappa\cis130_001_MW\week4_6-29_7_1\Monday\In-class_Example1\In-class_Example1.vcxproj" (ClCompile target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.02

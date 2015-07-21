@@ -33,10 +33,10 @@ void Tips::print()
 	cout << endl;
 	cout << "  Bill after taxes           :  $" << bill_after_taxes << endl;
 	cout << "  Tax rate                   :   " << tax_rate << "%" << endl;
-	cout << "  Bill before taxes          :  $" << (getBill_after_taxes()*(1-(getTax_rate()/100))) << endl;
+	cout << "  Bill before taxes          :  $" << (getBill_after_taxes()/(1+(getTax_rate()/100))) << endl;
 	cout << endl;
 	cout << "  Tip rate                   :   " << getTip_rate() << "%" << endl;
-	cout << "  Tip amount                 :   " << (getBill_after_taxes()*(1-(getTax_rate()/100))) * (getTip_rate()/100) << endl;
-	cout << "  Total bill with            :   " << bill_after_taxes + (getBill_after_taxes()*(1-(getTax_rate()/100))) * (getTip_rate()/100) << endl;
+	cout << "  Tip amount                 :   " << (getBill_after_taxes()/(1+(getTax_rate()/100))) * (getTip_rate()/100) << endl;
+	cout << "  Total bill with            :   " << bill_after_taxes + (getBill_after_taxes()/(1+(getTax_rate()/100))) * (getTip_rate()/100) << endl;
 	cout << "------------------------------------------" << endl;
 }

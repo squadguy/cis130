@@ -1,9 +1,9 @@
 /*
 NAME:          Christopher Wampnar
 ASSIGNMENT #2: Page 237, #10
-DISCRIPTION:   The program calculates the total cost for the checks
-	       written during a month.  It incluldes a variable check fee rate based 
-	       on volume of checks written during month.
+DISCRIPTION:   The program calculates the total cost for the checks written during
+	       a month.  It incluldes a variable check fee rate based on volume of
+	       checks written during month. Uses a while loop for validation.
 NOTES:         Originally compiled using g++.
                Written using Vim.
 */
@@ -53,7 +53,8 @@ int main()
 	
 	cout << endl <<"******************************"<<endl;
 	cout << "Number of checks written this month: " << num_checks << endl;
-	cout << "The check fee for " << num_checks << " is $" << check_fee << " per check." << endl;
+	cout << "The check fee for " << num_checks << " is $" << fixed << showpoint << setprecision(2)
+	     << check_fee << " per check." << endl;
 	cout << "That equals $"<< fixed << showpoint << setprecision(2) << total_check_fee<< endl;
 	cout << "******************************"<< endl;
 	cout<< endl;
@@ -62,5 +63,6 @@ int main()
 	cout << "The bank fee this month is: $" <<fixed << showpoint << setprecision(2) <<  total_bank_fee << endl;
 	cout << "********************************"<< endl;
 	cout << endl;
+
 	return 0;
 }
