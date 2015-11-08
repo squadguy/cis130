@@ -12,8 +12,6 @@ int main()
 	Instructor_file_processor inst_amy("file_AmyChaaban.txt");
 	Instructor_file_processor inst_tim("file_TimMoriarty.txt");
 
-	cout << inst_maya.inst_name();
-
 	inst_maya.print();
 	inst_amy.print();
 	inst_tim.print();

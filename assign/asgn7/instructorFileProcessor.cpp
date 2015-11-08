@@ -23,6 +23,7 @@ Instructor_file_processor::Instructor_file_processor(string _filename)
 
 void Instructor_file_processor::print()
 {
-	cout << inst_name;
+	
+
 
 };
